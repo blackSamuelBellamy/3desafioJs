@@ -86,12 +86,10 @@ body {
 
 
 
-@media (max-width: 600px){
+@media (max-width: 800px){
     
     .boxOver {
-        position: absolute;
-        top: 21.6vh;
-        left: 20vw;
+        
         height: 50vh;
         width: 60vw;
         
@@ -102,7 +100,7 @@ body {
     }
 }
 
-@media (orientation:landscape) {
+@media (max-width: 600px) and (orientation:landscape) {
 
     .boxOver {
         height: 30vw;
