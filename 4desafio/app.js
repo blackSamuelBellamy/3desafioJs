@@ -7,7 +7,7 @@ let colorElegido = 'will be changed :( ';
 
 const cambiaColor = (colorDiv, colorVariable) => {
 
-        colorDiv.forEach(color => {
+    colorDiv.forEach(color => {
         color.addEventListener('click', () => {
             document.querySelector('.container').style.setProperty(colorVariable, colorElegido);
         })       
@@ -20,7 +20,7 @@ document.addEventListener('keydown', (e) => {
     e.key == 's' ? colorElegido = '#889999' :
     e.key == 'd' ? colorElegido = '#E8AF3C' : colorElegido = '#000';
 
-         document.querySelectorAll('.cubo').forEach(cubo => {
+        document.querySelectorAll('.cubo').forEach(cubo => {
             cubo.style.cursor = 'pointer';
         })
         cambiaColor(blueDivs, '--blue');
